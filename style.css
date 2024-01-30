@@ -1,0 +1,395 @@
+html{overflow: hidden;}
+
+html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.content{
+    width: 100%; height: 100%;
+    background-color: black;
+    position: relative;
+}
+.content > h1{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    font-size: 20em;
+    font-weight: bold;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.6);
+}
+
+.navbar_main {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    color: white;
+    z-index: 999;
+    animation: navbarBottom 1s forwards;
+}
+
+.navbar_links {
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+.navbar_links a {
+    text-decoration: none;
+    color: white;
+    margin-right: 4rem;
+    font-size: 2.7rem;
+    font-weight: 600;
+    position: relative;
+    padding: 2% 0;
+    align-items: center;
+
+}
+
+.navbar_links a span {
+    margin: auto;
+}
+
+.navbar_links a:last-child {
+    margin-right: 0;
+}
+
+.navbar_links a::before {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 50%;
+    width: 0;
+    height: 3px;
+    background-color: white;
+    transition: width 0.2s ease-in-out, left 0.2s ease-in-out;
+}
+
+.navbar_links a:hover::before {
+    width: 100%;
+    left: 0;
+}
+
+.navbar_logo {
+    margin-left: 10%;
+    text-decoration: none;
+    color: white;
+    font-size: 2.3rem;
+    font-weight: 500;
+}
+
+.navbar_scroll {
+    background-color: #fff;
+    z-index: 5;
+    border-bottom: 1px solid gray;
+}
+
+.navbar_scroll div a {
+    color: white;
+}
+
+.navbar_scroll a {
+    color: white;
+}
+
+@keyframes navbarBottom {
+    0% {
+        transform: translateY(-70%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.landing{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.logo{
+    font-size: 5rem;
+}
+
+.landing p span.typed-text{
+    margin: 0;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+}
+.landing p span.cursor{
+    display: inline-block;
+    background-color: white;
+    margin: auto;
+    width: 0.1rem;
+    padding-top: 0.8rem;
+    height: 1.2rem;
+    animation: blink 1s infinite;
+}
+
+.landing p span.cursor.typing {
+    animation: none;
+}
+@keyframes blink {
+    0%  { background-color: white; } /* 시작 시 배경색은 회색(#ccc). */
+    49% { background-color: white; } /* 49% 진행 중, 배경색은 계속 회색(#ccc). */
+    50% { background-color: transparent; } /* 50% 진행 중, 배경색은 투명(transparent). */
+    99% { background-color: transparent; } /* 99% 진행 중, 배경색은 계속 투명(transparent). */
+    100%  { background-color: white; } /* 종료 시 배경색은 다시 회색(#ccc). */
+}
+.content:nth-child(even){background-color: black;}
+
+.in{
+    color:white
+}
+
+#me1{  
+  position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#me2{ 
+    position: absolute;
+    top: 60%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#me3{  
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#me4{
+    position: absolute;
+    top: 80%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#me5{
+    position: absolute;
+    top: 20%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+#me6{
+    position: absolute;
+    top: 70%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#me7{
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-weight: bold;
+
+}
+
+
+
+#g1{
+    display: block;
+    position:absolute;
+    width: 4.25rem;
+    height: 1.5rem;
+    top: 35%;
+    left: 10%;
+    color: white;
+    font-size: 1.5rem;
+}
+#g1 {
+    transition-property: all;
+    transition-duration: 1s;
+}
+
+#g1:hover{
+    width: 15rem;
+    color: black;
+    background-color: #40ffb1;
+}
+
+#g2{
+    display: block;
+    position:absolute;
+    width: 4.25rem;
+    height: 1.5rem;
+    top: 40%;
+    left: 10%;
+    color: white;
+    font-size: 1.5rem;
+}
+#g2 {
+    transition-property: all;
+    transition-duration: 1s;
+}
+
+#g2:hover{
+    width: 20rem;
+    color: black;
+    background-color: #40ffb1;
+}
+
+#g3{
+    display: block;
+    position:absolute;
+    width: 4.25rem;
+    height: 1.5rem;
+    top: 45%;
+    left: 10%;
+    color: white;
+    font-size: 1.5rem;
+}
+
+#g3 {
+    transition-property: all;
+    transition-duration: 1s;
+}
+
+#g3:hover{
+    width: 15rem;
+    color: black;
+    background-color: #40ffb1;
+}
+
+#g4{
+    display: block;
+    position:absolute;
+    width: 4.25rem;
+    height: 1.5rem;
+    top: 50%;
+    left: 10%;
+    color: white;
+    font-size: 1.5rem;
+}
+#g4 {
+    transition-property: all;
+    transition-duration: 1s;
+}
+
+#g4:hover{
+    width: 40rem;
+    color: black;
+    background-color: #40ffb1;
+}
+
+#g5{
+    display: block;
+    position:absolute;
+    width: 4.25rem;
+    height: 1.5rem;
+    top: 55%;
+    left: 10%;
+    color: white;
+    font-size: 1.5rem;
+}
+#g5{
+    transition-property: all;
+    transition-duration: 1s;
+}
+
+#g5:hover{
+    width: 45rem;
+    color: black;
+    background-color: #40ffb1;
+}
+
+#g6{
+    display: block;
+    position:absolute;
+    width: 4.25rem;
+    height: 1.5rem;
+    top: 60%;
+    left: 10%;
+    color: white;
+    font-size: 1rem;
+}
+#g6{
+    transition-property: all;
+    transition-duration: 1s;
+}
+
+#g6:hover{
+    width: 48rem;
+    color: black;
+    background-color: #40ffb1;
+}
+
+#g7{
+    display: block;
+    position:absolute;
+    width: 4.25rem;
+    height: 1.5rem;
+    top: 65%;
+    left: 10%;
+    color: white;
+    font-size: 1.3rem;
+}
+#g7{
+    transition-property: all;
+    transition-duration: 1s;
+}
+
+#g7:hover{
+    width: 36rem;
+    color: black;
+    background-color: #40ffb1;
+}
+
+#g8{
+    display: block;
+    position:absolute;
+    width: 4.25rem;
+    height: 1.5rem;
+    top: 70%;
+    left: 10%;
+    color: white;
+    font-size: 1.3rem;
+}
+#g8{
+    transition-property: all;
+    transition-duration: 2s;
+}
+
+#g8:hover{
+    width: 39rem;
+    color: black;
+    background-color: #40ffb1;
+}
